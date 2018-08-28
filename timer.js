@@ -13,7 +13,7 @@ let minutesInput = document.querySelector('#minutesInput')
 let secondsInput = document.querySelector('#secondsInput')
 
 let notify = () => {
-    new Notification(options[0].title, options[0] )
+    new window.Notification(options[0].title, options[0] )
 }
 
 document.addEventListener('DOMContentLoaded', () => {
