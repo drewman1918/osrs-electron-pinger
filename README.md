@@ -1,4 +1,4 @@
-# afk-timer
+# OSRS-Electron-Pinger
 
-**A quick electron countdown timer that notifies you when the time has expired**
+**Pings All OSRS Servers and returns the current latency. Build with Electron.**
 

@@ -8,43 +8,30 @@
   <body>
 
     <div class="main">
-      <div class="time">
-
-        <div class="timeInput">
-          <input id = 'minutesInput' type = 'number' min = "0" step="1" onclick="leadingZeros(this)" onchange="leadingZeros(this)">
-          <div class="title">
-            Minutes
-          </div>
-        </div>
+      <div class="button-row">
+        <button id="ping-button">Ping OSRS Servers</button>
+      </div>
+      
+      <div class="content">
+        <table id="results-table">
+          <thead class = 'table-header'>
+            <tr>
+              <th>World</th>
+              <th>Latency</th>
+            </tr>
+          </thead>
+          <tbody id='table-body'>
         
-        <div class="timeInput">
-          <input id = 'secondsInput' type = 'number' min = "0" max = "59" step="1" onclick="leadingZeros(this)" onchange="leadingZeros(this)">
-          <div class="title">
-            Seconds
-          </div>
-        </div>
-
+          </tbody>
+        </table>
       </div>
-
-      <div class="buttons">
-        <button id='resetButton'>Reset</button>
-        <button id='startButton'>Start</button>
-      </div>
-
+      
     </div>
 
     <script>
-      require('./timer.js')
+      require('./pinger.js')
       require('./renderer.js')
-
-      function leadingZeros(input) {
-          if (!isNaN(input.value) && input.value.length === 1) {
-            input.value = '0' + input.value;
-          }
-          if(input.value > 59){
-            input.value = 59
-          }
-        }
+      
     </script>
   </body>
 </html>

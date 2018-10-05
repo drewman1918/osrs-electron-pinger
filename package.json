@@ -1,8 +1,8 @@
 {
-  "name": "afk-timer",
-  "productName": "AFK Timer",
+  "name": "osrs-pinger",
+  "productName": "OSRS Pinger",
   "version": "0.0.1",
-  "description": "A minimal Electron countdown timer.",
+  "description": "A minimal Electron OSRS server latency checker.",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -20,14 +20,13 @@
     "electron-builder": "^20.28.3"
   },
   "dependencies": {
-    "dotenv": "^6.0.0",
-    "moment": "^2.22.2"
+    "node-http-ping": "^0.3.1"
   },
   "build": {
-    "appId": "AFKTimer",
-    "productName": "AFK Timer",
+    "appId": "OSRSPinger",
+    "productName": "OSRS Pinger",
     "mac": {
-      "category": "timing"
+      "category": "productivity"
     },
     "win": {
       "target": "NSIS",

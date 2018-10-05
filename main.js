@@ -9,8 +9,8 @@ let mainWindow
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 250,
-    height: 250,
+    width: 1000,
+    height: 800,
     icon: path.join(__dirname, 'icons/png/64x64.png')
   })
 
@@ -32,7 +32,7 @@ function createWindow () {
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.setAppUserModelId('AFKTimer')
+app.setAppUserModelId('OSRSPinger')
 app.on('ready', createWindow)
 
 // Quit when all windows are closed.
